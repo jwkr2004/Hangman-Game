@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Settings</title>
+    <link rel="stylesheet" href="CSS/settings.css">
+</head>
+<body>
+    <form id="gameSettings">
+        <label>Enter A Word: </label><br>
+        <input id="theword" type="password" required><br><br>
+        <label>Select The Difficulty: </label><br>
+        <select id="difficulty" required>
+            <option value="0"></option>
+            <option value="3">Three Guesses</option>
+            <option value="4">Four Guesses</option>
+            <option value="5">Five Guesses</option>
+            <option value="7">Seven Guesses</option>
+        </select><br><br><br>
+        <button type="button" id="start">Start Game</button>
+    </form>
+</body>
+<script src="JS/settings.js"></script>
+</html>

@@ -1,0 +1,11 @@
+#gameSettings {
+    font-family: monospace;
+    font-size: 1.4rem;
+    margin: auto auto;
+    width: fit-content;
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: orange;
+    padding: 5%;
+    text-align: center;
+}   

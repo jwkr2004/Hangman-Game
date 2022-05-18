@@ -1,0 +1,48 @@
+.parent {
+    font-family: monospace;
+    font-size: 1.4rem;
+    margin: auto auto;
+    display: flex;
+}
+
+#grid {
+    padding: 10px;
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    background-color: rgb(71, 71, 71);
+}
+
+#grid div {
+    padding: 25px;
+    width: 1fr;
+    margin: 2px;
+    border: solid black 1px;
+}
+
+.gray {
+    background-color: rgb(206, 206, 206);
+}
+
+.gray:hover {
+    background-color: rgb(160, 160, 160);
+}
+
+.letters {
+    text-align: center;
+    height: fit-content;
+    margin: auto 5%;
+}
+
+#theWord {
+    margin: 0 0 2% 8px;
+    letter-spacing: 8px;
+}
+
+.green {
+    background-color: rgb(80, 196, 52);
+}
+
+.red {
+    background-color: rgb(236, 75, 46);
+}
