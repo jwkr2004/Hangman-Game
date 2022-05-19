@@ -7,6 +7,6 @@ document.getElementById("start").addEventListener("click", function() {
         window.open("HTML/game.html", "_self");
     }
     else {
-        alert("Enter a word longer than 3 letters and without spaces or numbers.");
+        alert("Enter a word longer than 3 letters without spaces or numbers.");
     }
 });

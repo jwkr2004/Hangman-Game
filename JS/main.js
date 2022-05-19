@@ -28,9 +28,10 @@ function wordCreate(x) {
 
 function loseCheck() {
     if(guessCount <= 0) {
-        alert("You lose!");
         document.getElementById("theWord").innerText = word;
+        alert("You Lose!");
         gameover = true;
+        document.getElementById("restart").innerText = "Play Again";
     }
 }
 
@@ -38,6 +39,7 @@ function winCheck() {
     if(!hiddenWord.includes("_")) {
         alert("You Win!");
         gameover = true;
+        document.getElementById("restart").innerText = "Play Again";
     }
 }
 
@@ -143,4 +145,14 @@ window.addEventListener("load", function() {
         });
     });
     wordCreate();
+    document.getElementById("restart").innerText = ("Restart");
+});
+
+document.getElementById("restart").addEventListener("click", function() {
+    if(gameover) {
+        window.open("../index.html", "_self");
+    }
+    else {
+        location.reload();
+    }
 });
